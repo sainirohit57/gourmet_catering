@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+  font-weight: 100;
+}
+
+/* Navigation Menu */
+.navbar{
+	position: fixed;
+    width: 100%;
+	height:58px;
+	background-color: #fff;
+	z-index: 1;
+}
+.left-navbar{
+	float: left;
+    margin: 17px 35px;
+
+}
+.right-navbar{
+	float: right;
+	margin: 20px 38px;
+}
+.style-navbar a{
+	text-decoration:none;
+	color: black;
+    letter-spacing: 4px;
+	padding: 12px 12px;
+}
+.style-navbar a:hover{
+	background-color:#ccc;
+	
+}
+
+/* Header */
+.header{
+    position: relative;
+}
+.my-1{
+	position: absolute;
+    left: 30px;
+    bottom: 30px;
+    opacity: 0.6;;
+}
+
+/* About Section */
+.container{
+	/* border:2px solid red; */
+	overflow: hidden;
+	max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.left-container{
+	float:left;
+    width: 50%;
+}
+.left-container img{
+    width: 100%;
+    margin: 30px 0px;
+    padding: 0px 25px;
+}
+.right-container{
+	float:left;
+	width: 50%;
+}
+.right-container h1{
+	text-align: center;
+    margin-top: 60px;
+    font-size: 2.4rem;
+    font-weight: lighter;
+}
+ .right-container h5{
+	text-align: center;
+    margin-top: 40px;
+	    font-size: 1.2rem;
+    font-weight: lighter;
+}
+.first-para{
+	line-height: 1.5;
+    /* margin-top: 20px; */
+    /* padding: 38px 44px; */
+    padding: 24px 10px 0 24px;
+    /* font-weight: 400; */
+    font-size: larger;
+}
+.first-para span{
+	padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    /* color: #000!important; */
+    background-color: #f1f1f1;
+}
+.second-para{
+	line-height: 1.5;
+    padding: 24px 10px 0 24px;
+    font-size: larger;
+	opacity: 0.6;
+}
+
+hr{
+	border: none;
+    border-top: 1px solid #eee;
+    width: 80%;
+    margin: auto;
+}
+
+/* Menu Section */
+.menu{
+    /* border:1px solid aqua; */
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+	overflow: hidden;
+    margin: 50px auto;
+
+}
+.left-menu{
+	float:left;
+    width: 50%;
+    padding-left: 25px;
+}
+.left-menu h1{
+	text-align: center;
+    margin-top: 60px;
+    font-size: 2.4rem;
+    font-weight: lighter;
+
+}
+.left-menu h4{
+	font-size: larger;
+	     margin: 10px 0;
+}
+.left-menu p{
+	    opacity: 0.6;
+        margin: 22px 0;
+}
+.right-menu{
+	float:left;
+	width: 50%;
+}
+.right-menu img{
+	width: 100%;
+    margin: 30px 0px;
+    padding-right: 25px;
+}
+
+/* Contact Section */
+.contact{
+	max-width: 1120px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    padding: 0 25px;
+    line-height: 1.3;
+}
+.contact h1{
+	font-size: xx-large;
+    margin: 30px 0;
+}
+.text-blue-grey{
+    margin: 30px 0;
+    color: #607d8b;
+}
+.contact input{
+	width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 31px 10px;
+}
+.btn{
+	padding: 11px 10px;
+    margin: 22px 8px;
+    border: none;
+}
+.btn:hover{
+	color: #000;
+    background-color: #ccc;
+}
+
+/* Footer */
+footer{
+	background-color: #f1f1f1;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+	margin-top: 53px;
+}
+footer a{
+	color: black;
+}
+footer a:hover{
+	color: green;
+}
+
+/* Responsive */
+@media screen and (max-width:1000px){
+	.second-para{
+        display: none;
+    }
+    hr{
+        width: 100%;
+    }
+    .left-menu{
+        float: none;
+        width: 100%;
+    }
+    .left-menu h1{
+        margin-top: 0px;
+    }
+    .right-menu{
+        float: none;
+        width: 100%;
+    }
+    .right-menu img{
+        padding: 25px;
+    }
+}
+@media screen and (max-width:700px){
+    .navbar{
+        height: 40px;
+    }
+    .left-navbar{
+        margin: 12px 15px;
+    }
+    .right-navbar{
+        display: none;
+    }
+	.left-container{
+        display: none;
+    }
+	.right-container{
+        float: none;
+        width: 100%;
+    }
+    .my-1{
+        letter-spacing: 2px;
+        font-size: 4vw;
+        bottom: 12px;
+        left: 12px;
+    }
+}
